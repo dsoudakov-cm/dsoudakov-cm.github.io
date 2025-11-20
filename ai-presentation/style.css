@@ -297,6 +297,40 @@ th {
     gap: 1.5rem;
 }
 
+.download-card {
+    border: 1px solid var(--card-border);
+    border-left: 3px solid var(--accent-color);
+    background: rgba(255, 255, 255, 0.02);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.download-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.55rem 0.9rem;
+    border-radius: 10px;
+    text-decoration: none;
+    background: var(--accent-color);
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.download-link.ghost {
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--card-border);
+}
+
 .grid-item {
     background: rgba(255, 255, 255, 0.03);
     padding: 1rem;
