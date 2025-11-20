@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Adoption Roadmaps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="presentation-container">
+        <div class="slides-wrapper" id="slidesWrapper">
+
+            <!-- ==========================================
+                 ROADMAP 1: FOUNDATIONS (0-12 Months)
+                 ========================================== -->
+
+            <!-- Slide 1.1: Title & Vision -->
+            <section class="slide active roadmap-1" id="slide-1-1">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 1 (0-12 Months)</span>
+                        <h1>Building AI Foundations</h1>
+                    </div>
+                    <div class="slide-body three-col">
+                        <div class="col">
+                            <h3>Objective</h3>
+                            <p>Move from ad-hoc GenAI use to <strong>governed, value-focused pilots</strong>.</p>
+                        </div>
+                        <div class="col">
+                            <h3>Scope</h3>
+                            <p>Engineering, IT Ops, Security, Tooling, Knowledge Management.</p>
+                        </div>
+                        <div class="col">
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>Controlled AI access and policies in place.</li>
+                                <li>2–3 high-impact AI pilots in production.</li>
+                                <li>Org-wide baseline AI literacy.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 1.2: Why Now -->
+            <section class="slide roadmap-1" id="slide-1-2">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 1</span>
+                        <h1>Why AI Foundations Are Urgent</h1>
+                    </div>
+                    <div class="slide-body split-layout">
+                        <div class="left-col">
+                            <ul>
+                                <li>By ~2030, <strong>AI will touch nearly all IT work</strong> (augmented, not
+                                    replaced).</li>
+                                <li>Most enterprises are experimenting, but <strong>70–85% of AI projects
+                                        underperform</strong> without governance.</li>
+                                <li>Urgent need to shift from "Shadow AI" to "Managed AI".</li>
+                            </ul>
+                        </div>
+                        <div class="right-col center-content">
+                            <div class="arrow-diagram">
+                                <div class="box red">Shadow AI<br><small>Uncontrolled, Risky</small></div>
+                                <div class="arrow-down">⬇️</div>
+                                <div class="box green">Managed AI<br><small>Approved, Valuable</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 1.3: Current State Assessment -->
+            <section class="slide roadmap-1" id="slide-1-3">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 1</span>
+                        <h1>Where We Are Today – 6 Capability Lenses</h1>
+                    </div>
+                    <div class="slide-body">
+                        <table class="assessment-table">
+                            <thead>
+                                <tr>
+                                    <th>Domain</th>
+                                    <th>Current Maturity (0-3)</th>
+                                    <th>Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Engineering</td>
+                                    <td><span class="score">0-3</span></td>
+                                    <td>Copilots? Code review? Testing?</td>
+                                </tr>
+                                <tr>
+                                    <td>IT Ops</td>
+                                    <td><span class="score">0-3</span></td>
+                                    <td>Basic monitoring vs AIOps?</td>
+                                </tr>
+                                <tr>
+                                    <td>Security</td>
+                                    <td><span class="score">0-3</span></td>
+                                    <td>AI policy? Data classification?</td>
+                                </tr>
+                                <tr>
+                                    <td>Tooling</td>
+                                    <td><span class="score">0-3</span></td>
+                                    <td>Approved LLM platforms?</td>
+                                </tr>
+                                <tr>
+                                    <td>Knowledge Mgmt</td>
+                                    <td><span class="score">0-3</span></td>
+                                    <td>Central KB? RAG/Semantic search?</td>
+                                </tr>
+                                <tr>
+                                    <td>Agentic AI</td>
+                                    <td><span class="score">0-3</span></td>
+                                    <td>Experimental agents?</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 1.4: Guardrails & Governance -->
+            <section class="slide roadmap-1" id="slide-1-4">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 1</span>
+                        <h1>Foundational Guardrails</h1>
+                    </div>
+                    <div class="slide-body split-layout">
+                        <div class="left-col">
+                            <h3>Security, Risk, Compliance</h3>
+                            <ul>
+                                <li><strong>AI Use Policy:</strong> Define data handling rules (Personal/Customer data).
+                                </li>
+                                <li><strong>Governance Council:</strong> IT, Security, Legal, Data, HR (Monthly).</li>
+                                <li><strong>Access Controls:</strong> SSO, role-based access, logging.</li>
+                                <li><strong>DLP:</strong> Classify sensitive data, enforce policies.</li>
+                            </ul>
+                        </div>
+                        <div class="right-col center-content">
+                            <div class="stack-diagram">
+                                <div class="layer">Policy</div>
+                                <div class="layer">Controls</div>
+                                <div class="layer">Monitoring</div>
+                                <div class="layer">Training</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 1.5: Phase 1 Pilots -->
+            <section class="slide roadmap-1" id="slide-1-5">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 1 (0-6 Months)</span>
+                        <h1>Phase 1 – Quick Wins in Priority Domains</h1>
+                    </div>
+                    <div class="slide-body">
+                        <div class="grid-list">
+                            <div class="grid-item">
+                                <h4>Engineering</h4>
+                                <p>AI code assistants in IDEs (with rules). Pilot AI-assisted unit tests.</p>
+                            </div>
+                            <div class="grid-item">
+                                <h4>IT Ops</h4>
+                                <p>Incident summarization & alert clustering pilots (human-in-the-loop).</p>
+                            </div>
+                            <div class="grid-item">
+                                <h4>Security</h4>
+                                <p>LLMs for log/threat intel summarization (no auto-remediation yet).</p>
+                            </div>
+                            <div class="grid-item">
+                                <h4>Tooling</h4>
+                                <p>Standardize on 1–2 enterprise LLM platforms with governance.</p>
+                            </div>
+                            <div class="grid-item">
+                                <h4>Knowledge Mgmt</h4>
+                                <p>AI to tag, summarize, deduplicate docs; improve search.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 1.6: Phase 2 Platform -->
+            <section class="slide roadmap-1" id="slide-1-6">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 1 (6-12 Months)</span>
+                        <h1>Phase 2 – Build the AI Platform</h1>
+                    </div>
+                    <div class="slide-body">
+                        <div class="timeline">
+                            <div class="milestone">
+                                <div class="marker">Platform</div>
+                                <p>Central LLM gateway, SDLC/ITSM integration.</p>
+                            </div>
+                            <div class="milestone">
+                                <div class="marker">Eng</div>
+                                <p>AI coding guidelines, "done" criteria updates.</p>
+                            </div>
+                            <div class="milestone">
+                                <div class="marker">Ops</div>
+                                <p>Telemetry to data lake for future ML.</p>
+                            </div>
+                            <div class="milestone">
+                                <div class="marker">Sec</div>
+                                <p>Threat modeling, security reviews.</p>
+                            </div>
+                            <div class="milestone">
+                                <div class="marker">KM</div>
+                                <p>First RAG-based internal Q&A.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 1.7: Skills -->
+            <section class="slide roadmap-1" id="slide-1-7">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 1</span>
+                        <h1>Skills, Training & Change Management</h1>
+                    </div>
+                    <div class="slide-body three-col">
+                        <div class="col">
+                            <h3>Role</h3>
+                            <p><strong>Engineers</strong></p>
+                            <p><strong>IT Ops</strong></p>
+                            <p><strong>Security</strong></p>
+                        </div>
+                        <div class="col">
+                            <h3>Training Themes</h3>
+                            <p>Prompt patterns, secure coding.</p>
+                            <p>AIOps concepts, interpreting AI.</p>
+                            <p>AI threats, prompt injection.</p>
+                        </div>
+                        <div class="col">
+                            <h3>KPIs</h3>
+                            <p>Time saved/task.</p>
+                            <p>Incident MTTR influence.</p>
+                            <p>Knowledge query speed.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 ROADMAP 2: INTEGRATED AI OPS (12-36 Months)
+                 ========================================== -->
+
+            <!-- Slide 2.1: Title & Goal -->
+            <section class="slide roadmap-2" id="slide-2-1">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 2 (12-36 Months)</span>
+                        <h1>AI-Integrated Engineering, Ops & Security</h1>
+                    </div>
+                    <div class="slide-body">
+                        <h3>Objective: Move from isolated pilots to AI embedded in daily workflows.</h3>
+                        <div class="icon-row">
+                            <div class="icon-box">💻<br>Eng</div>
+                            <div class="icon-box">⚙️<br>Ops</div>
+                            <div class="icon-box">🛡️<br>Sec</div>
+                            <div class="icon-box">📚<br>KM</div>
+                        </div>
+                        <ul class="outcome-list">
+                            <li>AIOps in production.</li>
+                            <li>AI-augmented SDLC.</li>
+                            <li>AI-driven knowledge experiences.</li>
+                            <li>Defensive & Governance Security AI.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2.2: Target Architecture -->
+            <section class="slide roadmap-2" id="slide-2-2">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 2</span>
+                        <h1>Target AI Architecture – Platform View</h1>
+                    </div>
+                    <div class="slide-body center-content">
+                        <div class="stack-diagram wide">
+                            <div class="layer top">5. Agents (Early): Task-specific, human approval</div>
+                            <div class="layer">4. Domain Apps: Eng (IDE), Ops (Runbooks), Sec (Triage), KM (Q&A)</div>
+                            <div class="layer">3. AI Platform: Orchestration, RAG, Policy, Observability</div>
+                            <div class="layer">2. Model & Services: LLMs, Anomaly Detection</div>
+                            <div class="layer bottom">1. Data & Telemetry: Logs, Metrics, Code, Docs</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2.3: Engineering SDLC -->
+            <section class="slide roadmap-2" id="slide-2-3">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 2</span>
+                        <h1>Engineering – AI in the SDLC</h1>
+                    </div>
+                    <div class="slide-body">
+                        <div class="cycle-diagram">
+                            <div class="cycle-step">Plan<br><small>RFC Summaries</small></div>
+                            <div class="arrow">→</div>
+                            <div class="cycle-step">Code<br><small>Generation & Review</small></div>
+                            <div class="arrow">→</div>
+                            <div class="cycle-step">Test<br><small>Gen Test Cases</small></div>
+                            <div class="arrow">→</div>
+                            <div class="cycle-step">Release<br><small>Release Notes</small></div>
+                            <div class="arrow">→</div>
+                            <div class="cycle-step">Operate<br><small>Feedback Loop</small></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2.4: IT Ops AIOps -->
+            <section class="slide roadmap-2" id="slide-2-4">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 2</span>
+                        <h1>IT Ops – AIOps Maturity Path</h1>
+                    </div>
+                    <div class="slide-body">
+                        <div class="steps-container">
+                            <div class="step">
+                                <h4>Phase 1</h4>
+                                <p>Alert clustering, incident summaries.</p>
+                            </div>
+                            <div class="step">
+                                <h4>Phase 2</h4>
+                                <p>Anomaly detection, Risk prediction.</p>
+                            </div>
+                            <div class="step">
+                                <h4>Phase 3</h4>
+                                <p>Runbook suggestions, Controlled auto-remediation.</p>
+                            </div>
+                        </div>
+                        <p class="note"><strong>Always:</strong> Human approval for high-risk actions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2.5: Security -->
+            <section class="slide roadmap-2" id="slide-2-5">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 2</span>
+                        <h1>Security – AI as Force Multiplier</h1>
+                    </div>
+                    <div class="slide-body split-layout">
+                        <div class="left-col">
+                            <h3>Detection & Response</h3>
+                            <ul>
+                                <li>LLM SIEM summaries & prioritization.</li>
+                                <li>Threat hunting hypothesis generation.</li>
+                                <li>Defensive agents for playbook execution (with approval).</li>
+                            </ul>
+                        </div>
+                        <div class="right-col">
+                            <h3>Governance & Assurance</h3>
+                            <ul>
+                                <li>Continuous model/prompt audits.</li>
+                                <li>Red-teaming AI systems.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2.6: KM -->
+            <section class="slide roadmap-2" id="slide-2-6">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 2</span>
+                        <h1>Knowledge Management</h1>
+                    </div>
+                    <div class="slide-body center-content">
+                        <h3>AI-Driven Organizational Intelligence</h3>
+                        <div class="flow-diagram">
+                            <span>User</span> <span>→</span> <span class="highlight">AI Search (RAG)</span>
+                            <span>→</span> <span>Docs / Tickets / Wikis</span>
+                        </div>
+                        <ul class="compact-list">
+                            <li>Auto-tagging, summarization, deduplication.</li>
+                            <li>FAQ extraction from tickets.</li>
+                            <li>Routing agents for low-confidence queries.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2.7: Tooling -->
+            <section class="slide roadmap-2" id="slide-2-7">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 2</span>
+                        <h1>Tooling – Reduce Fragmentation</h1>
+                    </div>
+                    <div class="slide-body">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Tooling Area</th>
+                                    <th>Target 12–36 Months</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Platforms</td>
+                                    <td>Consolidate on 1–2 platforms + Standard SDKs.</td>
+                                </tr>
+                                <tr>
+                                    <td>Integrations</td>
+                                    <td>IDEs, CI/CD, ITSM, Chat, Wiki.</td>
+                                </tr>
+                                <tr>
+                                    <td>Observability</td>
+                                    <td>Track usage, latency, cost, quality per workload.</td>
+                                </tr>
+                                <tr>
+                                    <td>Strategy</td>
+                                    <td>Multi-model support, clear eval process.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2.8: Operating Model -->
+            <section class="slide roadmap-2" id="slide-2-8">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 2</span>
+                        <h1>Operating Model & KPIs</h1>
+                    </div>
+                    <div class="slide-body">
+                        <table class="kpi-table">
+                            <thead>
+                                <tr>
+                                    <th>Domain</th>
+                                    <th>Key KPIs</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Eng</td>
+                                    <td>Cycle time, Defects/KLOC, Review time.</td>
+                                </tr>
+                                <tr>
+                                    <td>Ops</td>
+                                    <td>MTTR, Noise reduction, Auto-resolved incidents.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sec</td>
+                                    <td>Time-to-detect, Time-to-contain, Analyst hours saved.</td>
+                                </tr>
+                                <tr>
+                                    <td>KM</td>
+                                    <td>Query success rate, Time-to-answer, Freshness.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 ROADMAP 3: AGENTIC ENTERPRISE (36+ Months)
+                 ========================================== -->
+
+            <!-- Slide 3.1: Title & Ambition -->
+            <section class="slide roadmap-3" id="slide-3-1">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 3 (36+ Months)</span>
+                        <h1>Agentic Enterprise</h1>
+                    </div>
+                    <div class="slide-body center-content">
+                        <h3>Objective: Evolve to agentic AI orchestrating multi-step workflows.</h3>
+                        <div class="agent-diagram">
+                            <span>Human</span> <span>↔</span> <span class="highlight-box">AI Agents</span>
+                            <span>↔</span> <span>Systems</span>
+                        </div>
+                        <p>Agents plan, reason, and act under strong governance.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3.2: Principles -->
+            <section class="slide roadmap-3" id="slide-3-2">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 3</span>
+                        <h1>Principles for Agentic AI</h1>
+                    </div>
+                    <div class="slide-body">
+                        <div class="grid-boxes">
+                            <div class="box">Human in the Loop</div>
+                            <div class="box">Goal-Oriented</div>
+                            <div class="box">Least Privilege</div>
+                            <div class="box">Observability</div>
+                            <div class="box">Continuous Testing</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3.3: Agentic Eng -->
+            <section class="slide roadmap-3" id="slide-3-3">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 3</span>
+                        <h1>Agentic AI in Engineering</h1>
+                    </div>
+                    <div class="slide-body">
+                        <table class="use-case-table">
+                            <thead>
+                                <tr>
+                                    <th>Use Case</th>
+                                    <th>Actions & Approval</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Auto CI/CD Agent</td>
+                                    <td>Detects flaky tests, suggests fixes, re-runs. Rolls back low-risk.</td>
+                                </tr>
+                                <tr>
+                                    <td>Refactoring Agent</td>
+                                    <td>Scans for issues, proposes PRs, links tickets.</td>
+                                </tr>
+                                <tr>
+                                    <td>Docs Agent</td>
+                                    <td>Maintains API docs, changelogs from code.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="note">Mandatory human review on PRs.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3.4: Agentic Ops -->
+            <section class="slide roadmap-3" id="slide-3-4">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 3</span>
+                        <h1>Agentic IT Ops</h1>
+                    </div>
+                    <div class="slide-body center-content">
+                        <div class="flow-diagram">
+                            <span>Telemetry</span> <span>→</span> <span>Agent Decisions</span> <span>→</span>
+                            <span>Actions</span> <span>→</span> <span>Feedback</span>
+                        </div>
+                        <div class="list-row">
+                            <div><strong>Self-Healing:</strong> Detect, propose, execute (low-risk).</div>
+                            <div><strong>Optimization:</strong> Rightsizing, scaling.</div>
+                            <div><strong>Change Risk:</strong> Predict risk from history.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3.5: Agentic Sec -->
+            <section class="slide roadmap-3" id="slide-3-5">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 3</span>
+                        <h1>Agentic Security</h1>
+                    </div>
+                    <div class="slide-body split-layout">
+                        <div class="left-col">
+                            <ul>
+                                <li><strong>Threat Response:</strong> Orchestrate playbooks (enrich, isolate, update
+                                    firewall).</li>
+                                <li><strong>Exposure Mgmt:</strong> Monitor vulns, recommend fixes.</li>
+                                <li><strong>Purple Team:</strong> Simulate attacks to validate defenses.</li>
+                            </ul>
+                        </div>
+                        <div class="right-col center-content">
+                            <div class="control-panel">
+                                <h4>Automation Level</h4>
+                                <div class="toggle">Manual</div>
+                                <div class="toggle active">Suggest</div>
+                                <div class="toggle">Auto</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3.6: Agentic KM -->
+            <section class="slide roadmap-3" id="slide-3-6">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 3</span>
+                        <h1>Agents Over Knowledge & Workflows</h1>
+                    </div>
+                    <div class="slide-body">
+                        <div class="journey-map">
+                            <div class="step">Incident</div>
+                            <div class="arrow">→</div>
+                            <div class="step">Problem Ticket</div>
+                            <div class="arrow">→</div>
+                            <div class="step">Fix Proposal</div>
+                            <div class="arrow">→</div>
+                            <div class="step">RFC Draft</div>
+                        </div>
+                        <ul>
+                            <li><strong>Enterprise Knowledge Agent:</strong> Routes queries, composes unified answers.
+                            </li>
+                            <li><strong>Cross-Domain Workflow Agents:</strong> Connects incidents to long-term fixes.
+                            </li>
+                            <li><strong>Personal "Co-Worker":</strong> Context-aware role assistant.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3.7: Tech Foundations -->
+            <section class="slide roadmap-3" id="slide-3-7">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 3</span>
+                        <h1>Technical Prerequisites</h1>
+                    </div>
+                    <div class="slide-body center-content">
+                        <div class="hub-spoke">
+                            <div class="hub">Agent Platform</div>
+                            <div class="spoke top">Unified Identity</div>
+                            <div class="spoke right">Event-Driven</div>
+                            <div class="spoke bottom">Tool Connectors</div>
+                            <div class="spoke left">Safety Policies</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3.8: Governance Scale -->
+            <section class="slide roadmap-3" id="slide-3-8">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Roadmap 3</span>
+                        <h1>Governance for the Agentic Enterprise</h1>
+                    </div>
+                    <div class="slide-body">
+                        <table class="governance-table">
+                            <thead>
+                                <tr>
+                                    <th>Risk Tier</th>
+                                    <th>Automation Level</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tier 1</td>
+                                    <td>Suggest Only</td>
+                                    <td>Drafting emails, code suggestions.</td>
+                                </tr>
+                                <tr>
+                                    <td>Tier 2</td>
+                                    <td>Auto w/ Approval</td>
+                                    <td>Deployments, Firewall updates.</td>
+                                </tr>
+                                <tr>
+                                    <td>Tier 3</td>
+                                    <td>Auto (Strict Policy)</td>
+                                    <td>Restarting services, blocking IPs.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 WRAP UP
+                 ========================================== -->
+
+            <!-- Slide 4.1: Wrap Up -->
+            <section class="slide wrap-up" id="slide-4-1">
+                <div class="content-card">
+                    <div class="slide-header">
+                        <span class="topic-tag">Summary</span>
+                        <h1>Putting It All Together</h1>
+                    </div>
+                    <div class="slide-body three-col">
+                        <div class="col">
+                            <h3>Roadmap 1</h3>
+                            <p>Safe, governed foundations. Real pilots.</p>
+                        </div>
+                        <div class="col">
+                            <h3>Roadmap 2</h3>
+                            <p>AI wired into Eng, Ops, Sec, KM workflows.</p>
+                        </div>
+                        <div class="col">
+                            <h3>Roadmap 3</h3>
+                            <p>Governed agents acting across systems.</p>
+                        </div>
+                    </div>
+                    <div class="footer-banner">
+                        <h2>Human-centered, AI-powered</h2>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="controls">
+            <button id="prevBtn" class="nav-btn" disabled>←</button>
+            <div class="chapter-indicators">
+                <span id="chapterDisplay">Roadmap 1</span>
+                <span id="slideCounter">1 / 24</span>
+            </div>
+            <button id="nextBtn" class="nav-btn">→</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
